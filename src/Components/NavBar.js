@@ -5,7 +5,7 @@ const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg fixed-top" style={{backgroundColor: "#e3f2fd"}}>
             <div className="container-fluid">
-                <Link className="navbar-brand" to="/"> NewsMonkey </Link>
+                <Link className="navbar-brand" to="/"> NewSnack </Link>
                 <button 
                     className="navbar-toggler" 
                     type="button" 

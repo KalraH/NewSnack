@@ -34,7 +34,7 @@ const News = (props) => {
 
     useEffect(() => {
         document.title = `News Monkey - ${setDocTitle(props.category)}`;
-        updateNews();
+        updateNews(); // eslint-disable-next-line
     }, [])
 
     const fetchMoreData = async () => {
@@ -50,7 +50,7 @@ const News = (props) => {
         <>
             <h1 className='text-center' 
                 style={{margin: '35px 0px', 
-                        marginTop: '90px'}}> NewsMonkey - Top {setDocTitle((props.category === 'general' ) ? '' : props.category)} Headlines </h1>
+                        marginTop: '90px'}}> NewSnack - Top {setDocTitle((props.category === 'general' ) ? '' : props.category)} Headlines </h1>
             
             {loading && <Spinner />}
             <InfiniteScroll
